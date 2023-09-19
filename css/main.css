@@ -1,0 +1,189 @@
+
+
+/* general style for the page  */
+
+*  {
+    margin : 0 ;
+    padding: 0 ; 
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+/* this is the trick on hover in li of ul inside the nav  */
+
+@media (min-width : 992px) { 
+
+    
+header ul li a {
+
+    position: relative;
+  
+
+}
+
+
+header ul li:first-child a::after{
+
+    content: "";
+    position: absolute;
+    z-index: 1 ;
+    border : 2px solid red;
+    width: 80%;
+    bottom : 0 ;
+    right: 50% ;
+    transform-origin: 0% 0% ;
+    transform: translateX(50%);
+    
+
+    
+}
+
+
+header ul li:not(:first-child):hover a::after{
+
+    content: "";
+    position: absolute;
+    width: 80%;
+    z-index: 1 ;
+    border : 2px solid red;
+    bottom : 0 ;
+    right: 50% ;
+
+    
+    transform-origin: 0% 0% ;
+    transform: translateX(50%);
+
+    animation-name : ani_key ; 
+
+    animation-duration: 0.5s; 
+
+    
+
+}
+
+
+@keyframes ani_key {
+
+    0% {
+        width : 5%  ; 
+        
+    }
+    10% {
+        width : 30% ; 
+        
+
+    }
+    25% {
+        width : 60% ;
+        
+
+    }
+    100% {
+        width : 80% ;
+        
+
+    }
+
+
+}
+
+}
+
+
+
+
+
+/* style column after the ul inside nav  */
+
+
+.after_nav .row :last-child i { 
+
+    font-size: 20px !important;
+    font-weight: bold !important;
+} 
+
+
+/* style of the upper icon in the end of the nav in the header  */
+
+
+.bi  {
+    position : relative ;
+}
+
+
+/* this is the number upper the icon in the header on the end upper icons  */
+.up_ico {
+
+    position: absolute;
+    top : -10%; 
+    font-size: 10px;
+    right: 0;
+    border-radius: 50%;
+    background-color: black;
+    color : white ;
+    width: 70%;
+    
+
+}
+
+
+/* begin the style of the banner div  */
+
+
+.banner .container_child h6 {
+    position: relative ;
+    display: inline;
+}
+
+
+
+/* add line in the buttom of the h6 in the childreen div  */
+
+.banner .container_child h6::after { 
+    content: "";
+    position: absolute;
+    z-index: 1 ;
+    border : 2px solid red;
+    width: 100%;
+    bottom : -7px ;
+    right: 50% ;
+    transform-origin: 0% 0% ;
+    transform: translateX(50%);
+    
+
+    
+}
+
+
+
+
+/* font familly of the h1 inside columns in the banners */
+
+.banner .container_child h1 {
+    
+    font-size : 25px !important; 
+} 
+
+
+
+.banner .row .col-lg-6 .container_child h1 {
+
+    font-family: 'Cookie', cursive;
+    font-size : 50px  ;
+
+
+
+}
+
+
+
+.banner .container_child h6 {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
