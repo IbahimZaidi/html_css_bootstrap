@@ -119,30 +119,37 @@
 <!-- start of the header -->
 <header>
     <!-- start of the container -->
-    <div class="container-fluid shadow-sm p-3">
+    <div class="container-fluid shadow-sm px-4">
 
 
 
         
         <!-- start of the navbar -->
-        <nav class="  d-flex justify-content-between  navbar navbar-expand-lg navbar-light bg-white ">
+        <nav class=" row  d-xl-flex justify-content-around  navbar navbar-expand-lg navbar-light  " >
 
 
 
-            <!-- this is the navbar-brand -->
-            <a href="#" class="navbar-brand ps-5 w-25"> <img src="images/logo.png" alt=""> </a>
- 
-
-            
+            <div class=" col-12  col-lg-1  ">
 
 
+                <div class="row">
+                                                <!-- this is the navbar-brand -->
+                    <a href="#" class=" col-10 navbar-brand  " style="width: 5%;"> <img src="images/logo.png" alt="" > </a>
+        
 
-            
-            <!-- this is the button of offcanvas -->
-            
-            <button class="btn border-secondary ms-auto d-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    
+
+
+
+                    
+                    <!-- this is the button of offcanvas -->
+                    
+                    <button class=" col-1 btn border-secondary ms-auto d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+            </div>
 
           
 
@@ -164,7 +171,7 @@
         
 
             <!-- start of the div contain the div toggler  -->
-                <div class="  d-xl-block d-none " id="nav-menu"  style="width: 40%;">
+                <div class="  d-lg-inline-block d-none me-5 m-xl-auto  col-lg-6  " id="nav-menu"  >
 
                     <ul class="navbar-nav m-auto  text-uppercase  ">
 
@@ -173,7 +180,7 @@
                                 home
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item px-3">
                             <a href="#" class="nav-link text-black">
                                 women's
                             </a>
@@ -183,17 +190,24 @@
                                 mern's
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item px-3">
                             <a href="#" class="nav-link text-black">
                                 shop
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item pages_class">
                             <a href="#" class="nav-link text-black">
                                 pages
+
+                                <ul>
+                                    <li>one</li>
+                                    <li>one</li>
+                                    <li>one</li>
+                                    <li>one</li>
+                                </ul>
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item px-3">
                             <a href="#" class="nav-link text-black">
                                 blog
                             </a>
@@ -224,14 +238,14 @@
 
                 <!-- start the 3-rd column-3  -->
 
-                <div class=" d-xl-block d-none after_nav " style="width: 35%;">
-                    <div class="row  d-flex justify-content-end " >
-                        <div class="col-5 pt-1 d-flex justify-content-end">
-                            <a href="#" class="text-light text-dark text-decoration-none h6">Login \</a>
+                <div class=" d-lg-inline-block d-none after_nav col-2  " style="width: 23% !important;">
+                    <div class="row  d-flex justify-content-start  " >
+                        <div class="col-6 col-xl-5 pt-2 d-flex justify-content-end">
+                            <a href="#" class="text-light text-dark text-decoration-none text-light" style="font-size: 12px;">Login \</a>
                             
-                            <a href="#" class="text-light text-dark text-decoration-none h6">Register</a>
+                            <a href="#" class="text-light text-dark text-decoration-none text-light" style="font-size: 12px;">Register</a>
                         </div>
-                        <div class="col-4 ">
+                        <div class="col-6 col-xl-5 d-flex justify-content-around  ">
                             <a href="#" class="text-decoration-none text-dark"> <i class="bi bi-search text-dark "> </i></a>
                             <a href="#" class="text-decoration-none text-dark"><i class="bi bi-heart mx-2"> <span class="up_ico text-center "> 2</span></i></a>
                             <a href="#" class="text-decoration-none text-dark"><i class="bi bi-cart"><span  class="up_ico text-center" > 3</span></i></a>
