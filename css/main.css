@@ -166,11 +166,6 @@ header ul li:not(:first-child):hover a::after{
 
 
 
-.banner .row .col-lg-6 .container_child h1  {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50px !important;
-
-}
 
 
 .banner .row .col-lg-6 .container_child:first-of-type h1 {
