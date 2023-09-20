@@ -57,7 +57,7 @@ header ul li:not(:first-child):hover a::after{
     transform-origin: 0% 0% ;
     transform: translateX(50%);
 
-    animation-name : ani_key ; 
+    animation-name : one_mouse_in ; 
 
     animation-duration: 0.5s; 
 
@@ -66,30 +66,104 @@ header ul li:not(:first-child):hover a::after{
 }
 
 
-@keyframes ani_key {
+
+header ul li:not(:first-child):not(:hover) a::after {
+
+
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    z-index: 1 ;
+    border : 2px solid red;
+    bottom : 0 ;
+    right: 50% ;
+
+    
+    transform-origin: 0% 0% ;
+    transform: translateX(50%);
+
+    animation-name : one_mouse_out ;
+
+    animation-timing-function: linear; 
+
+    animation-duration: 0.3s; 
+
+}
+
+
+
+@keyframes one_mouse_in {
 
     0% {
         width : 5%  ; 
+        border : 0.5px solid red;
+        
         
     }
     10% {
-        width : 30% ; 
+        width : 30% ;
+        border : 0.5px solid red;
+    
         
 
     }
     25% {
         width : 60% ;
+        border : 1.5px solid red;
+
         
 
     }
     100% {
         width : 80% ;
+        border : 2px solid red;
+
         
 
     }
 
 
 }
+
+
+@keyframes one_mouse_out {
+
+
+    0%{
+
+        width : 80% ; 
+        visibility: visible;
+    }
+    25% {
+        width : 60% ; 
+        visibility: visible;
+        border : 1.5px solid red;
+
+        
+
+    }
+    80% {
+        width : 30% ;
+        visibility: visible;
+        border : 1px solid red;
+
+        
+        
+
+    }
+    100% {
+        visibility: hidden;
+        border : 0.5px solid red;
+
+        
+        
+
+    }
+
+
+
+}
+
 
 }
 
