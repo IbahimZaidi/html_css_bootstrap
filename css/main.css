@@ -525,16 +525,28 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
 .container_images_cards .parent_row:hover .animation_div_icon > div {
     bottom: 27%;
     transition: bottom 1s;
+    color: white ;
 }
+
+
+
+
 
 
 .container_images_cards  .animation_div_icon > div:hover {
     background-color: #ca1515;
     animation: transform_rotate_in 0.3s;
+
     
+}
+.container_images_cards  .animation_div_icon > div:hover i {
+
+    color : white !important ; 
+
 }
 .container_images_cards  .animation_div_icon > div:not(:hover) {
     background-color: white;
+    color : black; 
     animation: transform_rotate_out 0.3s;
 
     
@@ -543,12 +555,9 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
 
 @keyframes transform_rotate_in{
     0% {
-        background-color: white;
-        
         transform : rotate(0deg) ;
     }
     100% {
-        background-color: #ca1515;
         transform : rotate(360deg) ;
 
     }
@@ -557,12 +566,9 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
 @keyframes transform_rotate_out{
     0% {
 
-        background-color: #ca1515;
-
         transform : rotate(0deg) ;
     }
     100% {
-        background-color: white;
         transform : rotate(-360deg) ;
 
     }
