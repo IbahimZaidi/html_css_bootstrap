@@ -20,50 +20,172 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital@0;1&family=Rubik:wght@500&family=Work+Sans:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
 
 
+    <!-- font awsome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
 
     <title>Ashion_brahim</title>
 </head>
-<body>
+<body >
     
+
+
+<!--Start  offcanvas  -->
+
+<div class="offcanvas offcanvas-start w-75  " style="    @media (min-width: 992px) { /* Adjust the breakpoint as needed */
+     offcanvas-start.show {
+        transform: none !important;
+    }
+
+    body.offcanvas-open {
+        overflow: hidden;
+    }
+
+    .offcanvas-backdrop.show {
+        display: none !important;
+    }
+}" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+
+      <button type="button" class="btn-close border p-2 me-2 mt-2 pe-2 ms-auto rounded-circle border-muted text-reset" style="font-size: 10px;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas-body">
+
+        <div class=" after_nav d-flex justify-content-center" >
+            <div class="row  d-flex justify-content-end " >
+                <div class="col-12 ">
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-search text-dark "> </i></a>
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-heart mx-3"> <span class="up_ico text-center "> 2</span></i></a>
+                    <a href="#" class="text-decoration-none text-dark"><i class="bi bi-cart"><span  class="up_ico text-center" > 3</span></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- add the logo link -->
+        <a href="#" class="navbar-brand  d-block pt-4 pb-3 w-25"> <img src="images/logo.png" alt=""> </a>
+
+
+        <!-- Add the list ul  -->
+        <ul class="navbar-nav m-auto  text-uppercase  ">
+
+            <li class="navbar-item ">
+                <a href="#" class="nav-link text-black new_cla">
+                    home
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="nav-link text-black">
+                    women's
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="nav-link text-black">
+                    mern's
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="nav-link text-black">
+                    shop
+                </a>
+            </li>
+            <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" style="position: static !important;"  role="menuitem" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" role="menuitem" href="#">Action</a>
+                    <a class="dropdown-item" role="menuitem" href="#">Another action</a>
+                    <a class="dropdown-item" role="menuitem" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="nav-link text-black">
+                    blog
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="nav-link text-black">
+                    contact
+                </a>
+            </li>   
+
+        </ul>
+
+
+    </div>
+    <!-- end offcanvas body  -->
+  </div>
+
+
+
+  <!-- End Canvas  -->
+
+
+
+
+
+
+
+
+
 <!-- start of the header -->
 <header>
     <!-- start of the container -->
-    <div class="container-fluid shadow-sm p-3">
+    <div class="container-fluid shadow-sm ">
 
 
 
         
-                    <!-- start of the navbar -->
-        <nav class="  d-flex justify-content-between  navbar navbar-expand-lg navbar-light bg-white ">
+        <!-- start of the navbar -->
+        <nav class=" row  d-xl-flex justify-content-around  navbar navbar-expand-lg navbar-light  " >
 
 
 
-            <!-- this is the navbar-brand -->
-            <a href="#" class="navbar-brand ps-5 w-25"> <img src="images/logo.png" alt=""> </a>
- 
-
-            
+            <div class=" col-12  col-lg-2  ">
 
 
-            <!-- End the first column-3 -->
+                <div class="row mx-1 ">
+                                                <!-- this is the navbar-brand -->
+                    <a href="#" class=" col-10 navbar-brand ms-lg-4 " style="width: 5%;"> <img src="images/logo.png" alt="" > </a>
+        
 
-            
-            <!-- this is the button of toggler -->
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Start the first column-5   -->
+                    
 
 
 
+                    
+                    <!-- this is the button of offcanvas -->
+                    
+                    <button class=" col-1 btn  border-muted ms-auto d-lg-none  " style="visibility: hidden;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon  border border-dark d-block border-2 h-100 me-4 " style="visibility: visible; width: 30px;"></span>
+                    </button>
+                </div>
+
+            </div>
+
+          
 
 
 
 
-                <!-- start of the div contain the div toggler  -->
-                <div class="collapse    navbar-collapse   " id="nav-menu"  style="width: 40%;">
+
+              
+
+
+
+          
+
+
+
+
+
+
+        
+
+            <!-- start of the div contain the div toggler  -->
+                <div class="  d-lg-inline-block d-none me-5 m-xl-auto  col-lg-6  " id="nav-menu"  >
 
                     <ul class="navbar-nav m-auto  text-uppercase  ">
 
@@ -72,7 +194,7 @@
                                 home
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item px-2">
                             <a href="#" class="nav-link text-black">
                                 women's
                             </a>
@@ -82,17 +204,25 @@
                                 mern's
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item px-2">
                             <a href="#" class="nav-link text-black">
                                 shop
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item pages_class">
                             <a href="#" class="nav-link text-black">
                                 pages
+
+                                <ul>
+                                    <li><button class="nav-link text-white p-1" onclick="window.location.href='https://www.youtube.com';">Product Details</button> </li>
+                                    <li><button class="nav-link text-white p-1" onclick="window.location.href='https://www.youtube.com';">Shop Cart</button> </li>
+                                    <li><button class="nav-link text-white p-1" onclick="window.location.href='https://www.youtube.com';">Checkout</button> </li>
+                                    <li><button class="nav-link text-white p-1" onclick="window.location.href='https://www.youtube.com';">Blog Details</button> </li>
+
+                                </ul>
                             </a>
                         </li>
-                        <li class="navbar-item">
+                        <li class="navbar-item px-2">
                             <a href="#" class="nav-link text-black">
                                 blog
                             </a>
@@ -110,35 +240,36 @@
 
 
                 </div>
-                <!-- End the div containing the collapsible menu -->
+            <!-- End the div containing the collapsible menu -->
 
 
 
-            
-            <!-- End the second column-5  -->
+        
 
 
 
 
 
 
-            <!-- start the 3-rd column-3  -->
+                <!-- start the 3-rd column-3  -->
 
-            <div class=" d-lg-block d-none after_nav " style="width: 35%;">
-                <div class="row  d-flex justify-content-end " >
-                    <div class="col-5 pt-1 d-flex justify-content-end">
-                        <a href="#" class="text-light text-dark text-decoration-none h6">Login \</a>
-                        
-                        <a href="#" class="text-light text-dark text-decoration-none h6">Register</a>
+                <div class=" d-lg-inline-block d-none after_nav col-2  " style="width: 23% !important;">
+                    <div class="row  d-flex justify-content-start  " >
+                        <div class="col-6 col-xl-5 pt-2 d-flex justify-content-end">
+                            <a href="#" class="text-light text-dark text-decoration-none text-light" style="font-size: 12px;">Login \</a>
+                            
+                            <a href="#" class="text-light text-dark text-decoration-none text-light" style="font-size: 12px;">Register</a>
+                        </div>
+                        <div class="col-6 col-xl-5 d-flex justify-content-around  ">
+                            <a href="#" class="text-decoration-none text-dark"> <i class="bi bi-search text-dark "> </i></a>
+                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-heart mx-2"> <span class="up_ico text-center "> 2</span></i></a>
+                            <a href="#" class="text-decoration-none text-dark"><i class="bi bi-cart"><span  class="up_ico text-center" > 3</span></i></a>
+                        </div>
                     </div>
-                    <div class="col-4 ">
-                        <a href="#" class="text-decoration-none text-dark"> <i class="bi bi-search text-dark "> </i></a>
-                        <a href="#" class="text-decoration-none text-dark"><i class="bi bi-heart mx-2"> <span class="up_ico text-center "> 2</span></i></a>
-                        <a href="#" class="text-decoration-none text-dark"><i class="bi bi-cart"><span  class="up_ico text-center" > 3</span></i></a>
-                    </div>
+
                 </div>
 
-            </div>
+
         </nav>
         <!-- End the navbar -->
 
@@ -157,7 +288,7 @@
 
 
 <section class="banner mt-2">
-    <div class="container-fluid bg-warning" style=" height: fit-content;"  >
+    <div class="container-fluid " style=" height: fit-content;"  >
 
 
 
@@ -166,40 +297,40 @@
 
 
             <!-- this is the first column-6  -->
-            <div class="col-lg-6 col-md-12 d-flex justify-content-center  align-items-center" style="background-image: url('images/category/category-1.jpg'); background-size: 110% 100% ; height : 80vh">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center  align-items-center" style="background-image: url('images/category/tt.jpg'); background-size: 170% 190% ; height : 80vh">
                 
-                <div class="container_child h-50 " style="width: 85% ;">
+                <div class="container_child  h-50 ps-3 pt-3" style="width: 85% ; ">
                    
-                    <h1>  Women’s fashion  </h1>
+                    <h1 style="">  Women’s fashion  </h1>
                     <p class="text-secondary " > Sitamet, consectetur adipiscing  elit, sed do eiusmod tempor incidid-unt labore
                      edolore magna aliquapendisse ultrices gravida.</p>
 
-                    <h6 class="fw-bold text-uppercase "> shop now</h6>
+                    <h6 class=" text-uppercase "> <a href="#" class="text-decoration-none text-dark">shop now</a></h6>
                 </div>
             </div>
             <!-- End the first column-6 -->
 
 
             <!-- this is the second column-3 -->
-            <div class="col-sm-6 col-lg-3 bg-info ps-1 pe-1 " style=" height : 80vh ">
+            <div class="col-sm-6 col-lg-3  ps-1 pe-1 " style=" height : 80vh ">
                 
-                <div class="row  bg-green  gy-1 " style="height: 99%;">
+                <div class="row    gy-1 " style="height: 99%;">
                     <div class="col-12 h-50 w-100">
-                        <div class="container_child h-100 w-100 pt-3 " style=" background-image: url('images/category/category-2.jpg'); background-size: 110% 100% ;">
+                        <div class="container_child h-100 w-100 pt-3 ps-3 d-flex flex-column justify-content-center  align-items-start" style=" background-image: url('images/category/category-2.jpg'); background-size: 110% 100% ;">
                    
-                            <h1 style="font-size: 40px;">  Men’s fashion   </h1>
+                            <h1 class="fw-bold" style="font-family: 'Montserrat', sans-serif; font-size: 24px !important;">  Men’s fashion  </h1>
                             <p class="text-secondary "  > 358 items </p>
         
-                            <h6 class="fw-bold text-uppercase " > shop now</h6>
+                            <h6 class=" text-uppercase " > <a href="#" class="text-decoration-none text-dark">shop now</a></h6>
                         </div>
                     </div>
                     <div class="col-12 h-50 w-100" >
-                        <div class="container_child h-100 w-100 pt-3  " style=" background-image: url('images/category/category-3.jpg'); background-size: 110% 100% ;">
+                        <div class="container_child h-100 w-100 pt-3 ps-3 d-flex flex-column justify-content-center  align-items-start " style=" background-image: url('images/instagram/insta-5.jpg'); background-size: 110% 100% ;">
                    
-                            <h1 style="font-size: 40px;">  Men’s fashion  </h1>
-                            <p class="text-secondary "  > 358 items </p>
+                            <h1 class="fw-bold" style="font-family: 'Montserrat', sans-serif; font-size: 24px !important;">   Cosmetics </h1>
+                            <p class="text-secondary "  > 208 items </p>
         
-                            <h6 class="fw-bold text-uppercase " > shop now</h6>
+                            <h6 class="text-uppercase " > <a href="#" class="text-decoration-none text-dark">shop now</a></h6>
                         </div>
                     </div>
                 </div>
@@ -208,25 +339,25 @@
             <!-- this the end of the second column-3  -->
 
             <!-- this the start of the third column-3  -->
-            <div class="col-sm-6 col-lg-3 bg-dark ps-0  " style=" height : 80vh ">
+            <div class="col-sm-6 col-lg-3  ps-0  " style=" height : 80vh ">
                 
-                <div class="row  bg-green  gy-1 " style="height: 99%;">
+                <div class="row    gy-1 " style="height: 99%;">
                     <div class="col-12 h-50 w-100">
-                        <div class="container_child h-100 w-100 pt-3 " style=" background-image: url('images/category/category-4.jpg'); background-size: 110% 100% ;">
+                        <div class="container_child h-100 w-100 pt-3 ps-3 d-flex flex-column justify-content-center  align-items-start" style=" background-image: url('images/category/category-3.jpg'); background-size: 110% 100% ;">
                    
-                            <h1 style="font-size: 40px;">  Men’s fashion  </h1>
-                            <p class="text-secondary "  > 358 items </p>
+                            <h1 class="fw-bold" style="font-family: 'Montserrat', sans-serif; font-size: 24px !important;">  Kid’s fashion </h1>
+                            <p class="text-secondary "  > 108 items </p>
         
-                            <h6 class="fw-bold text-uppercase " > shop now</h6>
+                            <h6 class="fw-bold text-uppercase " > <a href="#" class="text-decoration-none text-dark">shop now</a></h6>
                         </div>
                     </div>
                     <div class="col-12 h-50 w-100" >
-                        <div class="container_child h-100 w-100 pt-3  " style=" background-image: url('images/category/category-5.jpg'); background-size: 110% 100% ;">
+                        <div class="container_child h-100 w-100 pt-3 ps-3 d-flex flex-column justify-content-center  align-items-start" style=" background-image: url('images/category/category-5.jpg'); background-size: 110% 100% ;">
                    
-                            <h1 style="font-size: 40px;">  Men’s fashion  </h1>
-                            <p class="text-secondary "  > 358 items </p>
+                            <h1 class="fw-bold" style="font-family: 'Montserrat', sans-serif; font-size: 24px !important;">  Accessories  </h1>
+                            <p class="text-secondary "  > 630 items </p>
         
-                            <h6 class="fw-bold text-uppercase " > shop now</h6>
+                            <h6 class=" text-uppercase " > <a href="#" class="text-decoration-none text-dark">shop now</a></h6>
                         </div>
                     </div>
                 </div>
@@ -248,10 +379,465 @@
 
 
 
+<!-- start the new section  -->
+
+<section class="after_banner_section">
+
+    <div class="container   mt-4" style="height: fit-content;">
+
+
+
+        <!-- strat the ul and h4 title container -->
+        <div class="row   pe-3   d-flex   justify-content-between me-lg-4 ms-xl-0 ms-lg-2 m-xxl-3  pe-0">
+
+
+
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 ps-xl-0   ">
+                <h4 class="text-uppercase ms-lg-3"> new product </h4>
+            </div>
+
+
+            <div class="col-12   pe-lg-5 col-md-8 col-lg-9 pe-xl-0 ps-xl-5   ">
+                <ul class=" row d-flex  justify-content-end  pe-xl-0 ms-xl-5 pe-xl-0 pe-4 ps-0 ">
+                    <li class="  col-1  ">
+                        <a href="#" class=""> All </a>
+                    </li>
+                    <li class="  col-2  col-lg-1 me-lg-4 ">
+                        <a href="#" class=""> Women’s </a>
+                    </li>
+                    <li class="  col-2 col-lg-1">
+                        <a href="#" class=""> Men's </a>
+                    </li>
+                    <li class="  col-2 col-lg-1">
+                        <a href="#" class=""> Kid's </a>
+                    </li>
+                    <li class="  col-2 ps-1 col-lg-1 me-lg-4 ">
+                        <a href="#" class=""> Accessoires </a>
+                    </li>
+                    <li class="  col-2 ms-1 col-lg-1">
+                        <a href="#" class=""> Cosmetics </a>
+                    </li>  
+                </ul>
+            </div>
 
 
 
 
+        </div>
+        <!-- End the ul and h4 title container  -->
+
+
+        <!-- Start the div container the card's images  -->
+        <div class="row  container_images_cards mt-3 " >
+
+            <div class="row ms-0 mb-3 d-flex " >
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-sm-flex justify-content-center d-flex justify-content-center ps-xl-0">
+
+                    <div class=" parent_row   text-center    " style="width: 18rem; width: 240px ; height: 448px; ">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i></a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-1.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Flowy striped skirt</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $59.0</p>
+
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ps-xl-0 d-sm-flex justify-content-center d-flex justify-content-center ">
+
+                    <div class=" parent_row m-xl-auto  text-center   " style="width: 18rem; width: 240px ; height: 448px; ">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-2.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Buttons tweed blazer</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $50.0</p>
+
+
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3   ps-xl-0 d-sm-flex justify-content-center d-flex justify-content-center ">
+
+                    <div class="parent_row ms-xl-auto  rounded-0 text-center" style="width: 18rem; width: 240px ; height: 448px;">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-3.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Cotton T-Shirt</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $89.0</p>
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3   ps-xl-0 pe-xl-0 d-sm-flex justify-content-center d-flex justify-content-center">
+
+                    <div class="parent_row ms-xl-auto  text-center" style="width: 18rem; width: 240px ; height: 448px;">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-4.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Slim striped pocket shirt</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $99.0</p>
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+            
+            
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3   ps-xl-0 d-sm-flex justify-content-center d-flex justify-content-center">
+
+                    <div class=" parent_row me-xl-auto  text-center " style="width: 18rem; width: 240px ; height: 448px;">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-5.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Fit micro corduroy shirt</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $159.0</p>
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3   ps-xl-0 d-sm-flex justify-content-center d-flex justify-content-center">
+
+                    <div class="parent_row m-xl-auto  text-center" style="width: 18rem; width: 240px ; height: 448px;">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-6.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Tropical Kimono</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $29.0</p>
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3   ps-xl-0 d-sm-flex justify-content-center d-flex justify-content-center">
+
+                    <div class=" parent_row ms-xl-auto  text-center" style="width: 18rem; width: 240px ; height: 448px;">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/category/tt.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Contrasting sunglasses</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $19.0</p>
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3  ps-xl-0 pe-xl-0 d-sm-flex justify-content-center d-flex justify-content-center">
+
+                    <div class=" parent_row ms-xl-auto  text-center" style="width: 18rem; width: 240px ; height: 448px;">
+                        <div class="animation_div_icon d-flex justify-content-center">
+                            <div> <a href="#"><i class="bi bi-arrows-angle-expand"></i>  </a> </div>
+                            <div> <a href="#"><i class="bi bi-suit-heart"></i> </a> </div>
+                            <div> <a href="#"><i class="bi bi-bag-dash"></i>  </a> </div>
+                        </div>
+                        <img class="card-img-top img-fluid w-100" src="images/product/product-8.jpg" style=" height: 360px;" alt="Card image cap">
+                        <div class="card-body ">
+                            <p class="text-dark text-dark  mb-0 " style="font-size: 14px;">Water resistant backpack</p>
+                            <div class="start_icons_5 mt-0" style=" margin-top: -2% !important;">
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                                <i class="bi bi-star-fill" style="font-size: 10px; color : #e3c01c"></i>
+                            </div>
+
+                            <p class="fw-bold"> $109.0</p>
+
+
+                          
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End the div container the card's images  -->
+
+
+
+
+
+    </div>
+    <!-- End the container of the section after banner  -->
+
+</section>
+<!-- End the new Section -->
+
+
+<!-- start section icons and some text's -->
+<section class="some_icon_text mb-5" style="height: fit-content;">
+    <div class="container">
+        <div class="row    ">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex justify-content-center" style="height: 100px;">
+                <i class="bi bi-car-front me-3 text-danger"></i>
+                <div class="text_icon mt-1 ">
+                    <span class="m-0  mb-2  me-auto text-start fw-bold">Free Shipping</span>
+                    <p> For all oder over $99  </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3  d-flex justify-content-center  " style="height: 100px;">
+                <i class="bi bi-cash me-3 text-danger"></i>
+                <div class="text_icon mt-1 ">
+                    <span class="m-0  mb-2  me-auto text-start fw-bold">Money Back Guarantee</span>
+                    <p>If good have Problems </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3  d-flex justify-content-center " style="height: 100px;">
+                <i class="bi bi-info-circle me-3 text-danger"></i>
+                <div class="text_icon mt-1 ">
+                    <span class="m-0  mb-2  me-auto text-start fw-bold">Online Support 24/7</span>
+                    <p> Dedicated support</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  col-md-4 col-lg-3  d-flex justify-content-center " style="height: 100px;">
+                <i class="bi bi-person-fill-lock me-3"></i>
+                <div class="text_icon mt-1 ">
+                    <span class="m-0  mb-2  me-auto text-start fw-bold">Payment Secure</span>
+                    <p> 100% secure payment </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End section icons and some text's -->
+
+
+
+<!-- start section instagram  -->
+
+<section class="sec_intsagram mb-5" >
+    <div class="container-fluid">
+
+        <div class="row w-100">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 contain_child">
+                
+                <i class="bi bi-instagram"></i>
+                <a class="text-decoration-none text-dark" href="https://www.youtube.com">@brahim_zaidi</a>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 contain_child">
+                
+                <i class="bi bi-instagram"></i>
+                <a class="text-decoration-none text-dark" href="https://www.youtube.com">@brahim_zaidi</a>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2  contain_child">
+                
+                <i class="bi bi-instagram"></i>
+                <a class="text-decoration-none text-dark" href="https://www.youtube.com">@brahim_zaidi</a>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2  contain_child">
+                
+                <i class="bi bi-instagram"></i>
+                <a class="text-decoration-none text-dark" href="https://www.youtube.com">@brahim_zaidi</a>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2  contain_child">
+                
+                <i class="bi bi-instagram"></i>
+                <a class="text-decoration-none text-dark" href="https://www.youtube.com">@brahim_zaidi</a>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2  contain_child">
+                
+                <i class="bi bi-instagram"></i>
+                <a class="text-decoration-none text-dark" href="https://www.youtube.com">@brahim_zaidi</a>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+<!-- End  section instagram  -->
+
+
+
+
+
+
+<!-- start the footer element  -->
+
+<footer>
+    <div class="container  ">
+
+
+
+        <div class="row gy-3">
+            <div class="col-12 col-sm-7 col-md-6 col-lg-4" style="height: 200px;">
+                <a href="#" class=" d-block mb-3 navbar-brand  " style="width: 5%;"> <img src="images/logo.png" alt="" > </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, maiores.</p>
+                <div class="images_pay">
+                    <a href="#"> <img src="images/payment/payment-1.png" alt=""></a>
+                    <a href="#"> <img src="images/payment/payment-2.png" alt=""></a>
+                    <a href="#"> <img src="images/payment/payment-3.png" alt=""></a>
+                    <a href="#"> <img src="images/payment/payment-4.png" alt=""></a>
+                    <a href="#"> <img src="images/payment/payment-5.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-3 col-lg-2">
+                <h6> QUICK LINKS </h6>
+                <ul class="d-flex flex-column align-items-start ps-0">
+                    <li class=" w-100" style="list-style: none;"><a class="nav-link" href="#">About</a></li>
+                    <li class=" my-2 w-100" style="list-style: none;"><a class="nav-link" href="#">Blogs</a></li>
+                    <li class=" w-100" style="list-style: none;"><a class="nav-link" href="#">Contact</a></li>
+                    <li class=" mt-2 w-100" style="list-style: none;"><a class="nav-link" href="#">FAQ</a></li>
+
+
+
+                </ul>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-2">
+                <h6> ACCOUNT </h6>
+                <ul class="d-flex flex-column align-items-start ps-0">
+                    <li class=" w-100" style="list-style: none;"><a class="nav-link" href="#">My Account</a></li>
+                    <li class="my-2 w-100" style="list-style: none;"><a class="nav-link" href="#">Orders Tracking</a></li>
+                    <li class=" w-100" style="list-style: none;"><a class="nav-link" href="#">Checkout</a></li>
+                    <li class="mt-2 w-100" style="list-style: none;"><a class="nav-link" href="#">Wishlist</a></li>
+
+
+
+                </ul>
+            </div>
+            <div class="col-12 col-sm-8 col-md-8 col-lg-4 input_class">
+                <h6> NEWSLETTER </h6>
+                <div class="input-group mb-3 mt-3 " style="position: relative;">
+                    <input type="text " class="form-control w-100 rounded-5 shadow-none  " style=" border-color: #e1e1e1; padding: 12px 10px; padding-left: 7%;" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button  class= "  btn  btn-danger text-white rounded-4 mt-1  input-group-text " style="transform:translate(-102% , 5% ) ; position: absolute ; z-index: 9999999;" id="basic-addon2">SUBSCRIBE</span>
+                    </div>
+                  </div>
+
+                  <div class="icon_social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i> </a>
+                    <a href="#"><i class="bi bi-youtube"></i> </a>
+                    <a href="#"><i class="bi bi-instagram"></i> </a>
+                    <a href="#"><i class="bi bi-twitch"></i> </a>
+
+                  </div>
+            </div>
+            
+        </div>
+
+
+        <hr>
+
+        <div class="row text-center">
+            <span>Copyright © 2023 All rights reserved | This template is made with <i class="bi bi-heart-fill "></i>  by Colorlib</span>
+        </div>
+    </div>
+</footer>
+<!-- End the footer element  -->
 
 
 
