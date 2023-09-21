@@ -907,7 +907,8 @@ footer hr + div i {
     .input_class button {
 
         position: static !important;
-        margin-left: 50%    ; 
+        margin-left: 50%    ;
+        width : 100% ;  
         
     } 
 }
