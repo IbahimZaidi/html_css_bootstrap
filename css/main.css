@@ -400,9 +400,7 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
 
 /* modifie the ul after the banner  */
 
-.after_banner_section ul {
-    
-}
+
 
 .after_banner_section ul li { 
     list-style: none;
@@ -447,3 +445,161 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
     left: 0;
     transform :translateX(0) ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  style section some_icon_text  */
+
+.some_icon_text i {
+    font-size : 36px; 
+    display: inline;
+    color : #ca1515 ;
+}
+
+
+.some_icon_text span {
+    font-size: 16px;
+}
+
+.some_icon_text p {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style section instagram  */
+
+.sec_intsagram .contain_child {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 320px ;
+    color: #0d0d0d; 
+    position: relative;
+    
+}
+
+/* add image background in ::before element  */
+.sec_intsagram .contain_child::before {
+
+    content: "";
+    position: absolute;
+    
+    top : 0; 
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("../images/product/product-1.jpg");
+    background-size: 100% 100%;
+
+    z-index: -1;
+
+
+}
+
+.sec_intsagram .contain_child:nth-child(2):before {
+    background-image: url("../images/instagram/insta-2.jpg");
+}
+
+
+.sec_intsagram .contain_child:nth-child(3):before {
+    background-image: url("../images/instagram/insta-3.jpg");
+}
+
+.sec_intsagram .contain_child:nth-child(4):before {
+    background-image: url("../images/instagram/insta-4.jpg");
+}
+
+.sec_intsagram .contain_child:nth-child(5):before {
+    background-image: url("../images/instagram/insta-5.jpg");
+}
+
+.sec_intsagram .contain_child:nth-child(6):before {
+    background-image: url("../images/instagram/insta-6.jpg");
+}
+
+/* add some transition with css  */
+
+.sec_intsagram .contain_child:hover a , .sec_intsagram .contain_child:hover i  {
+    
+    opacity: 1;
+
+}
+
+.sec_intsagram .contain_child:not(:hover) a , .sec_intsagram .contain_child:not(:hover)  i  {
+    opacity: 0;
+
+    transition: opacity 1s ; 
+}
+
+.sec_intsagram .contain_child:hover::before {
+
+    opacity: 0.2;
+    transition : opacity 1s ; 
+}
+
+.sec_intsagram .contain_child:not(:hover)::before {
+
+    opacity: 1;
+    transition : opacity 0.5s ; 
+}
+
+
+
+
+/* Add style on i and a element inside container_child of the section instagram  */
+
+
+.sec_intsagram .contain_child i {
+    font-size: 30px;
+    opacity: 0;
+    
+}
+
+.sec_intsagram .contain_child a {
+    font-size: 16px !important;
+    color: #0d0d0d;
+    font-weight: 400 !important;
+    opacity: 0;
+
+}
+
