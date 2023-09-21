@@ -458,12 +458,14 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
     }
 }
 
-@media (max-width : 380px)
+@media (max-width : 450px)
 {
     .after_banner_section .container ul li {
         font-size: 11px;
     }
+    
 }
+
 
 
 @media (max-width : 280px)
