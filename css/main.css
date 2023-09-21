@@ -398,7 +398,7 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
 
 
 
-/* modifie the ul after the banner  */
+/* modifie after_banner_section section  ul after the banner  */
 
 
 
@@ -446,6 +446,197 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
     transform :translateX(0) ;
 }
 
+
+
+/* add animation in the container of the images with price after the banner  */
+
+.container_images_cards .parent_row {
+
+    position : relative ; 
+}
+
+.container_images_cards .parent_row .card-body {
+    background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+ .container_images_cards .animation_div_icon > div  {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position : absolute ;
+        bottom: 6%;
+        left: 19% ;
+        z-index: 2;
+
+}
+.container_images_cards .animation_div_icon > div i {
+    color: black !important;
+    font-weight: 800 !important;
+}
+
+.container_images_cards .animation_div_icon > div:nth-child(2) {
+    left: 43% ;
+}
+
+.container_images_cards .animation_div_icon > div:last-child {
+    left: 65%;
+}
+
+
+
+
+
+
+
+
+.container_images_cards .parent_row:hover .animation_div_icon > div {
+    bottom: 27%;
+    transition: bottom 1s;
+}
+
+
+.container_images_cards  .animation_div_icon > div:hover {
+    background-color: #ca1515;
+    animation: transform_rotate_in 0.3s;
+    
+}
+.container_images_cards  .animation_div_icon > div:not(:hover) {
+    background-color: white;
+    animation: transform_rotate_out 0.3s;
+
+    
+}
+
+
+@keyframes transform_rotate_in{
+    0% {
+        background-color: white;
+        
+        transform : rotate(0deg) ;
+    }
+    100% {
+        background-color: #ca1515;
+        transform : rotate(360deg) ;
+
+    }
+}
+
+@keyframes transform_rotate_out{
+    0% {
+
+        background-color: #ca1515;
+
+        transform : rotate(0deg) ;
+    }
+    100% {
+        background-color: white;
+        transform : rotate(-360deg) ;
+
+    }
+}
+
+
+.container_images_cards .parent_row:hover .animation_div_icon > div:first-child {
+    
+    bottom: 27%;
+    transition: bottom 0.5s;
+    transition-delay: 0.1s ;
+}
+
+.container_images_cards .parent_row:not(:hover) .animation_div_icon > div {
+    bottom: 6%;
+    transition: bottom 0.5s;
+    
+}
+
+
+
+.container_images_cards .parent_row:hover .animation_div_icon > div:nth-child(2) {
+    
+    bottom: 27%;
+    transition: bottom 0.5s;
+    transition-delay: 0.1s ;
+}
+
+.container_images_cards .parent_row:not(:hover) .animation_div_icon > div:nth-child(2) {
+    
+    bottom: 6%;
+    transition: bottom 0.5s;
+    transition-delay: 0.1s ;
+}
+
+.container_images_cards .parent_row:hover .animation_div_icon > div:last-child {
+    bottom: 27%;
+    transition: bottom 0.5s;
+    transition-delay: 0.2s ;
+
+}
+
+
+.container_images_cards .parent_row:not(:hover) .animation_div_icon > div:last-child {
+    bottom: 6%;
+    transition: bottom 0.5s;
+    transition-delay: 0.2s ;
+
+}
+
+
+@keyframes  slow_in_one {
+
+    0% {
+        bottom: 6%;
+
+    }
+    25% {
+        bottom: 20%;
+
+    }
+
+    50% {
+        bottom: 25%;
+    }
+
+    100% {
+        bottom: 27%;
+    }
+}
+
+
+@keyframes slow_out_one {
+
+    0% {
+        bottom: 27%;
+    }
+    25% {
+        bottom: 20%;
+    }
+
+    50% {
+
+        bottom: 25%;
+    }
+
+    100% {
+
+        bottom: 6%;
+    }
+
+}
+
+
+
+
+.container_images_cards .animation_div_icon div i {
+    color : red; 
+
+}
 
 
 
@@ -603,3 +794,11 @@ header ul .navbar-item:not(:first-child):not(:hover) > a::after {
 
 }
 
+
+
+
+
+
+
+
+/*  */
